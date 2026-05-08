@@ -1,0 +1,130 @@
+.request-card{
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #ececec;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  position: relative;
+  overflow: hidden;
+  height: 332px;
+  display: flex;
+  flex-direction: column;
+}
+
+.request-card::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #ff1d1d;
+}
+
+.request-card.normal::before{
+  background: #f59e0b;
+}
+
+.card-top{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff1d1d;
+}
+
+.request-card.normal .dot{
+  background: #f59e0b;
+}
+
+.tag{
+  background: #fdeaea;
+  color: #c81e1e;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+.request-card.normal .tag{
+  background: #fff1d6;
+  color: #c77700;
+}
+
+.card-body{
+  flex: 1;
+}
+
+.blood-badge{
+  width: 47px;
+  height: 40px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.info{
+  margin-top: 16px;
+}
+
+.info-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.info h3{
+  margin: 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.units{
+  margin: 0;
+  font-size: 15px;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.meta{
+  margin-top: 28px;
+}
+
+.meta p{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0;
+  font-size: 15px;
+  color: #4b5563;
+}
+
+.call-btn{
+  width: 100%;
+  height: 34px;
+  margin-top: auto;
+  border: none;
+  border-radius: 16px;
+  background: #da3b2d;
+  color: white;
+  font-size: 16px;
+  font-weight: 550;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.call-btn:hover{
+  background: #bf2f23;
+}

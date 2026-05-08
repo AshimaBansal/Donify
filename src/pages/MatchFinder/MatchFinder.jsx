@@ -22,7 +22,7 @@ function MatchFinder() {
         console.log("Error fetching donors:", error);
       });
   }, []);
-    const handleFindMatch = () => {
+  const handleFindMatch = () => {
     setSearched(true);
     let filtered = allDonors;
     if (selectedBloodGroup && selectedBloodGroup !== "Select blood group") {
@@ -41,7 +41,7 @@ function MatchFinder() {
     }
     setFilteredDonors(filtered);
   };
-    const getAvatarColor = (name) => {
+  const getAvatarColor = (name) => {
     const colors = [
       "#2563eb",
       "#7c3aed",
@@ -131,10 +131,8 @@ function MatchFinder() {
                 </div>
               )}
             </div>
-            
           </div>
         )}
-
         <button className="plus">+</button>
       </div>
     </>
