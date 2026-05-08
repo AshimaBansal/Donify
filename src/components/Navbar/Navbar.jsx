@@ -41,13 +41,9 @@ const Navbar = () => {
             Find Match
           </Link>
         </li>
-        <button className="donor-btn mobile-btn" onClick={handleRegisterClick}>
-          Register as Donor
-        </button>
+        
       </ul>
-      <button className="donor-btn desktop-btn" onClick={handleRegisterClick}>
-        Register as Donor
-      </button>
+     
       <div
         className={`hamburger ${menuOpen ? "open" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
