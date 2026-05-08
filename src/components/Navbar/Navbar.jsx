@@ -17,7 +17,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo" onClick={handleLinkClick}>
-        
+        <div className="logo-icon">🩸</div>
+        <span className="logo-text">Donify</span>
       </Link>
       <ul className={`navbar-links ${menuOpen ? "active" : ""}`}>
         <li>
@@ -40,13 +41,13 @@ const Navbar = () => {
             Find Match
           </Link>
         </li>
-        <button className="donor-btn mobile-btn" onClick={handleRegisterClick}>
+        {/* <button className="donor-btn mobile-btn" onClick={handleRegisterClick}>
           Register as Donor
-        </button>
+        </button> */}
       </ul>
-      <button className="donor-btn desktop-btn" onClick={handleRegisterClick}>
+      {/* <button className="donor-btn desktop-btn" onClick={handleRegisterClick}>
         Register as Donor
-      </button>
+      </button> */}
       <div
         className={`hamburger ${menuOpen ? "open" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
