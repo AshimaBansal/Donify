@@ -1,9 +1,4 @@
-export default function MatchFinder() {
-    return (
-        <div className="page-container">
-            <div className="page-header">
-                <h1>Match Finder</h1>
-            </div>
-        </div>
-    );
-}
+import { useEffect, useState } from "react";
+import "./MatchFinder.css";
+import Navbar from "../../components/Navbar/Navbar";
+import DonorCard from "../../components/DonorCard/DonorCard";
