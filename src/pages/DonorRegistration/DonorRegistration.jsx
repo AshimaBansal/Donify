@@ -40,3 +40,21 @@ setFormData({
   age: "",
   city: "",
 });
+
+return (
+  <div className="registration-page">
+
+    <div className="registration-header">
+      <h1>Become a Donor</h1>
+      <p>
+        Register now and help save lives.
+        Every donation counts!
+      </p>
+    </div>
+
+    <div className="registration-container">
+
+    </div>
+
+  </div>
+);
