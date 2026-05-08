@@ -62,3 +62,36 @@
 .filter-btn:hover{
   background: #dfdfdf;
 }
+
+.cards-container{
+  margin-top: 40px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 28px;
+}
+
+.floating-btn{
+  position: fixed;
+
+  bottom: 28px;
+  right: 28px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: var(--primary-red);
+  color: white;
+
+  font-size: 30px;
+
+  cursor: pointer;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.floating-btn:hover{
+  background: var(--primary-red-dark);
+}
