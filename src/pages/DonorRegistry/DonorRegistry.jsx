@@ -21,7 +21,10 @@ export default function DonorRegistry({ donors }) {
         <div className="top-banner">
           <div className="banner-left">
             <span className="banner-icon">♡</span>
-            
+            <div>
+              <h3>Save a life. Register as a donor today.</h3>
+              <p>Your donation can save up to 3 lives.</p>
+            </div>
           </div>
           <button className="register-btn">
             Register Now
