@@ -30,3 +30,5 @@ const handleSubmit = (e) => {
 
   console.log("Donor Registration Data:", formData);
 };
+
+alert("Thank you for registering as a donor! Your information has been saved.");
