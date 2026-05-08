@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./DonorRegistration.css";
 
 const DonorRegistration = () => {
-  // Form state - stores user input
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -12,7 +12,7 @@ const DonorRegistration = () => {
     city: "",
   });
 
-  // Handle input changes
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -21,13 +21,13 @@ const DonorRegistration = () => {
     });
   };
 
-  // Handle form submission
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Donor Registration Data:", formData);
-    // TODO: Send data to backend API
+
     alert("Thank you for registering as a donor! Your information has been saved.");
-    // Reset form
+
     setFormData({
       fullName: "",
       email: "",
@@ -40,16 +40,16 @@ const DonorRegistration = () => {
 
   return (
     <div className="registration-page">
-      {/* PAGE HEADER */}
+
       <div className="registration-header">
         <h1>Become a Donor</h1>
         <p>Register now and help save lives. Every donation counts!</p>
       </div>
 
-      {/* REGISTRATION FORM */}
+
       <div className="registration-container">
         <form onSubmit={handleSubmit} className="registration-form">
-          {/* FULL NAME */}
+
           <div className="form-group">
             <label htmlFor="fullName">Full Name</label>
             <input
@@ -63,7 +63,7 @@ const DonorRegistration = () => {
             />
           </div>
 
-          {/* EMAIL */}
+
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
@@ -77,7 +77,7 @@ const DonorRegistration = () => {
             />
           </div>
 
-          {/* PHONE */}
+
           <div className="form-group">
             <label htmlFor="phone">Phone Number</label>
             <input
@@ -91,7 +91,7 @@ const DonorRegistration = () => {
             />
           </div>
 
-          {/* BLOOD GROUP */}
+
           <div className="form-group">
             <label htmlFor="bloodGroup">Blood Group</label>
             <select
@@ -113,7 +113,7 @@ const DonorRegistration = () => {
             </select>
           </div>
 
-          {/* AGE */}
+
           <div className="form-group">
             <label htmlFor="age">Age</label>
             <input
@@ -127,7 +127,7 @@ const DonorRegistration = () => {
             />
           </div>
 
-          {/* CITY */}
+
           <div className="form-group">
             <label htmlFor="city">City</label>
             <input
@@ -141,7 +141,7 @@ const DonorRegistration = () => {
             />
           </div>
 
-          {/* SUBMIT BUTTON */}
+
           <button type="submit" className="submit-btn">
             Register as Donor
           </button>
